@@ -34,7 +34,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
             <Col md={6} xl={7} lg={12}>
               <form onSubmit={handleSubmit}>
                 <div className="new-email-bx text-center">
-                  <input className="border-0" value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
+                  <input className="border-0 bg-transparent p-2" value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
                   <button type="submit" className="btn text-light ">Submit</button>
                 </div>
               </form>

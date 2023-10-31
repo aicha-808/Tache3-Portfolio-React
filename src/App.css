@@ -437,9 +437,9 @@ section.Banner{
   font-size: 18px;
   letter-spacing: 0.8px;
 }
-.contact form textarea{
-  /* width: 100%; */
-}
+/* .contact form textarea{
+  width: 100%;
+} */
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
@@ -478,15 +478,17 @@ section.Banner{
   margin-bottom: 80px;
   margin-top: -122px;
 }
-.new-email-bx button{
+.new-email-bx {
   display: flex !important;
   align-items: center !important;
+  justify-content: space-around;
 }
 .new-email-bx button{
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   margin-left: 3rem;
   margin-top: 0px !important;
 }
+
 /* ------------responsive--------------- */
 
 @media screen and (min-width: 480px) {
@@ -502,8 +504,16 @@ section.Banner{
     margin-left: 0rem !important;
     margin-top: 5px;
   }
-  .new-email-bx{
-    display:  block;
-    
-  }
+  /* .new-email-bx {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+   
+  } */
+  /* .contact form textarea{
+    width: 60%;
+  } */
+  /* .contact img {
+    width: 50%;
+  } */
 }
