@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tache3-Portfolio-React/static/css/main.a24a6259.css",
-    "main.js": "/Tache3-Portfolio-React/static/js/main.a84c5b04.js",
+    "main.js": "/Tache3-Portfolio-React/static/js/main.d8cefe5d.js",
     "static/js/787.8c655efd.chunk.js": "/Tache3-Portfolio-React/static/js/787.8c655efd.chunk.js",
     "static/media/color-sharp.png": "/Tache3-Portfolio-React/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/banner-bg.png": "/Tache3-Portfolio-React/static/media/banner-bg.cc1273af450504afe755.png",
@@ -23,11 +23,11 @@
     "static/media/nav-icon1.svg": "/Tache3-Portfolio-React/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/Tache3-Portfolio-React/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.a24a6259.css.map": "/Tache3-Portfolio-React/static/css/main.a24a6259.css.map",
-    "main.a84c5b04.js.map": "/Tache3-Portfolio-React/static/js/main.a84c5b04.js.map",
+    "main.d8cefe5d.js.map": "/Tache3-Portfolio-React/static/js/main.d8cefe5d.js.map",
     "787.8c655efd.chunk.js.map": "/Tache3-Portfolio-React/static/js/787.8c655efd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a24a6259.css",
-    "static/js/main.a84c5b04.js"
+    "static/js/main.d8cefe5d.js"
   ]
 }
