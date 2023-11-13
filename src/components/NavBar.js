@@ -3,11 +3,6 @@ import { useState, useEffect } from "react";
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import '../App.css';
 
-// import {logo} from '../assets/img/logo.svg'
-// import {naveIcone1} from '../assets/img/nav-icon1'
-// import {naveIcone2} from '../assets/img/nav-icon2'
-// import {naveIcone3} from '../assets/img/nav-icon3'
-
  export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
@@ -38,7 +33,6 @@ import '../App.css';
                     <span className="text-light">LOGO</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <span className="Navbar-toggle-icon"></span>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link href="#home" className={activeLink === 'home'? 'active navbar-link': 'navbar-link'} 

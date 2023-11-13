@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Col, Row, Alert } from "react-bootstrap";
+import { Col, Alert } from "react-bootstrap";
 
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
@@ -22,24 +22,22 @@ export const Newsletter = ({ status, message, onValidated }) => {
   }
 
   return (
-      <Col lg={12}>
-        <div className="newsletter-bx wow slideInUp bg-light text-dark rounded-5 ">
-          <Row className="d-flex align-items-center">
-            <Col lg={12} md={6} xl={5}>
-              <h3 className="fw-bold h6">Subscribe to our Newsletter</h3>
-              {status === 'sending' && <Alert>Sending...</Alert>}
-              {status === 'error' && <Alert variant="danger">{message}</Alert>}
-              {status === 'success' && <Alert variant="success">{message}</Alert>}
-            </Col>
-            <Col md={6} xl={7} lg={12}>
-              <form onSubmit={handleSubmit}>
-                <div className="new-email-bx text-center">
-                  <input className="border-0 bg-transparent p-2" value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                  <button type="submit" className="btn text-light ">Submit</button>
-                </div>
-              </form>
-            </Col>
-          </Row>
+      <Col md={12}>
+        <div className="row newsletter-bx bg-light text-dark rounded-5 mx auto ">
+          <div className="md-6 lg-6">
+            <h4 className="fw-bold h6">Subscribe to our Newsletter</h4>
+            {status === 'sending' && <Alert>Sending...</Alert>}
+            {status === 'error' && <Alert variant="danger">{message}</Alert>}
+            {status === 'success' && <Alert variant="success">{message}</Alert>}
+          </div>
+          <div className="md-6 lg-6">
+            <form onSubmit={handleSubmit}>
+              <div className="new-email-bx text-center gx-2 ">
+                <input className="border-0 bg-transparent p-2 form-control mx-2" value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
+                <button type="submit" className="btn text-light ">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </Col>
   )

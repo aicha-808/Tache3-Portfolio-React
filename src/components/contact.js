@@ -51,36 +51,34 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2 className='mb-3 fw-bold'>Get in Touch</h2>
-                        <form onSubmit={handleSubmit} className="text-center">
-                            <Row>
-                                <Col sm={6}  md={12} lg={6}>
-                                    <input onChange={(e) => UpdateProperty('firstName', e.target.value)} value={formDetail.firstName} type='text' className='py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='First Name'></input>
+                        <form onSubmit={handleSubmit} class="row gx-3 gy-2 align-items-center">
+                            <div class="col-sm-6">
+                                <input onChange={(e) => UpdateProperty('firstName', e.target.value)} value={formDetail.firstName} type='text' className='form-control py-2 px-3 rounded-4 mb-3 bg-transparent' 
+                                placeholder='First Name' />
+                            </div>
+                            <div class="col-sm-6">
+                                <input onChange={(e) => UpdateProperty('lastName', e.target.value)} type='text' className='form-control py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Last Name'></input>
+                            </div>
+                            <div class="col-sm-6">
+                                <input onChange={(e) => UpdateProperty('email', e.target.value)} type='email' className='form-control py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Email Adress'></input>
+                            </div>
+                            <div class="col-sm-6">
+                                <input onChange={(e) => UpdateProperty('tel', e.target.value)} type='tel' className='form-control py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Phone Number'></input>
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea onChange={(e) => UpdateProperty('message', e.target.value)} 
+                                rows={7} className='py-2 px-3 rounded-4 mb-3 bg-transparent form-control' placeholder='Message'>
+                                </textarea>
+                                <div className='mt-4'>
+                                    <button className='btn btn-light px-4 rounded-0'>{boutonTex}</button>
+                                </div>
+                            </div>
+                            {
+                                status.message &&
+                                <Col>
+                                    <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                                 </Col>
-                                <Col sm={6}  md={12} lg={6}>
-                                    <input onChange={(e) => UpdateProperty('lastName', e.target.value)} type='text' className='py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Last Name'></input>
-                                </Col>
-                                <Col sm={6}  md={12} lg={6}>
-                                    <input onChange={(e) => UpdateProperty('email', e.target.value)} type='email' className='py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Email Adress'></input>
-                                </Col>
-                                <Col sm={6} md={12} lg={6}> 
-                                    <input onChange={(e) => UpdateProperty('tel', e.target.value)} type='tel' className='py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Phone No'></input>
-                                </Col>
-                                <Col sm={6}  md={12} lg={6}>
-                                    <textarea onChange={(e) => UpdateProperty('message', e.target.value)} cols={55} 
-                                    rows={5} className='py-2 px-3 rounded-4 mb-3 bg-transparent' placeholder='Message'>
-                                    </textarea>
-                                    <div className='mt-4'>
-                                        <button className='btn btn-light px-5 rounded-0'>{boutonTex}</button>
-                                    </div>
-                                </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                                    </Col>
-                                }
-                               
-                            </Row>
+                            }
                         </form>
                     </Col>
                 </Row>
